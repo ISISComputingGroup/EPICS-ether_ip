@@ -113,8 +113,9 @@ void drvEtherIP_Register() {
 	iocshRegister(&drvEtherIP_define_PLCDef, drvEtherIP_define_PLCCall);
 	iocshRegister(&drvEtherIP_read_tagDef  , drvEtherIP_read_tagCall);
 }
+
+epicsExportRegistrar(drvEtherIP_Register);
+
 #ifdef __cplusplus
 }
 #endif	/* __cplusplus */
-
-epicsExportRegistrar(drvEtherIP_Register);

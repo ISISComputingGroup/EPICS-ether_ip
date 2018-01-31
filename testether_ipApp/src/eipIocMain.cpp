@@ -6,7 +6,11 @@
 #include <stddef.h>
 #include <string.h>
 #include <stdio.h>
+#ifdef _WIN32
+#include <epicsGetopt.h>
+#else
 #include <unistd.h>
+#endif
 
 #include <epicsThread.h>
 #include <devSup.h>

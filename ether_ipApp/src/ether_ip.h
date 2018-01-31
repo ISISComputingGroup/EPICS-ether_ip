@@ -96,6 +96,10 @@ typedef int               EIP_SOCKET;
 #endif
 #endif
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #include "eip_bool.h"
 
 /* This could be an application on its own...
@@ -721,5 +725,9 @@ eip_bool EIP_write_tag(EIPConnection *c, const ParsedTag *tag,
 void *EIP_Get_Attribute_Single(EIPConnection *c,
                                CN_Classes cls, CN_USINT instance,
                                CN_USINT attr, size_t *len);
+
+#ifdef __cplusplus
+}
+#endif
 
 /* EOF ether_ip.h */
