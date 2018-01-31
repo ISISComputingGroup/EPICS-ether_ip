@@ -138,7 +138,7 @@ extern double drvEtherIP_default_rate;
 
 void drvEtherIP_help();
 
-void drvEtherIP_init();
+void epicsShareFunc drvEtherIP_init();
 
 long drvEtherIP_report(int level);
 
@@ -146,7 +146,7 @@ void drvEtherIP_dump();
 
 void drvEtherIP_reset_statistics();
 
-eip_bool drvEtherIP_define_PLC(const char *PLC_name,
+eip_bool epicsShareFunc drvEtherIP_define_PLC(const char *PLC_name,
                            const char *ip_addr, int slot);
 
 PLC *drvEtherIP_find_PLC(const char *PLC_name);

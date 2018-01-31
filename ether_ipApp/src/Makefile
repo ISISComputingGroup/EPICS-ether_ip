@@ -13,8 +13,9 @@ CROSS_OPT=NO
 USR_CFLAGS_Darwin += -Wno-unused-value
 
 # On WIN32, have to add socket library
-# to build the test program
-SYS_PROD_LIBS_WIN32 = ws2_32
+# to build the test program and DLL
+PROD_SYS_LIBS_WIN32 += ws2_32
+LIB_SYS_LIBS_WIN32 += ws2_32
 
 PROD_HOST += ether_ip_test
 ether_ip_test_SRCS += ether_ip_test.c
@@ -36,8 +37,6 @@ INC += drvEtherIP.h
 PROD_IOC_vxWorks += ether_ipLib
 
 LIB_LIBS += $(EPICS_BASE_IOC_LIBS)
-DLL_LIBS = ca Com
-SYS_DLL_LIBS = ws2_32
 ether_ip_RCS_WIN32 = ether_ip.rc
 
 ether_ip_SRCS += dl_list.c
