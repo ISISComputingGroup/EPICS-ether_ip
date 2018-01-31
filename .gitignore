@@ -5,3 +5,5 @@ dbd/
 include/
 lib/
 O.*
+iocBoot/iocether_ip/cdCommands
+iocBoot/iocether_ip/dllPath.bat
