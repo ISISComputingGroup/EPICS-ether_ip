@@ -261,7 +261,7 @@ void EIP_hexdump(int level, const void *_data, int len)
         EIP_printf(level, "- ");
         for (i=0; i<NUM  &&  (i+offset)<len; ++i)
         {
-            if (isprint((int)data[i]))
+            if (isprint((unsigned char)data[i]))
                 EIP_printf(level, "%c", data[i]);
             else
                 EIP_printf(level, ".");
