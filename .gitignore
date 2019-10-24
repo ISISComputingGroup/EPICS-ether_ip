@@ -1,6 +1,6 @@
 ## generated from EPICS build
 bin/
-db/
+/db/
 dbd/
 include/
 lib/
