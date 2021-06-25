@@ -19,6 +19,7 @@
 #include <dbAccessDefs.h>
 #include <iocInit.h>
 #include <iocsh.h>
+#include <shareLib.h>
 
 #include "drvEtherIP.h"
 

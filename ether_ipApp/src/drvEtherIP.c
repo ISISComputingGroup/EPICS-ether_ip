@@ -16,6 +16,7 @@
 /* Base */
 #include <drvSup.h>
 #include <errlog.h>
+#include <shareLib.h>
 /* Local */
 #include "drvEtherIP.h"
 #ifdef HAVE_314_API

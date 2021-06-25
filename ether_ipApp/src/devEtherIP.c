@@ -40,6 +40,7 @@
 #include <mbboDirectRecord.h>
 #include <stringoutRecord.h>
 #include <errlog.h>
+#include <shareLib.h>
 
 /* Local */
 #include "drvEtherIP.h"
