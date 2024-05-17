@@ -5,9 +5,11 @@ include $(TOP)/configure/CONFIG
 #----------------------------------------
 #  ADD MACRO DEFINITIONS AFTER THIS LINE
 
+## overriding HOST_OPT on windows can cause issues as it also controls whether the
+## debug or release runtime libraries are linked in  
 # No optimization, we want debugging info:
-HOST_OPT=NO
-CROSS_OPT=NO
+#HOST_OPT=NO
+#CROSS_OPT=NO
 
 # On Darwin, got errors about unused assignment in recGblSetSevr
 USR_CFLAGS_Darwin += -Wno-unused-value
